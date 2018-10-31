@@ -7,8 +7,8 @@
         public static function getConexao(){
             try{
                 if(empty($conn)){
-                    self::$conn = new PDO('mysql:host=localhost;dbname=leiame','root','');
-                                          
+                    self::$conn = new PDO('mysql:host=mysql995.umbler.com;dbname=leiame','rootnoticias','root3110');
+                    //self::$conn = new PDO('mysql:host=;dbname=leiame','rootnoticias','root3110');    
                     self::$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 }
                 return self::$conn;
